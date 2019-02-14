@@ -133,7 +133,7 @@ RUN mv modgit /usr/local/bin
 
 RUN cd /var/www/html
 RUN modgit init
-RUN modgit -b develop add vindi https://github.com/vindi/vindi-magento.git
+RUN modgit -b develop add vindi https://github.com/rtakauti/fiap_devops.git
 
 ENV COMPOSER_ALLOW_SUPERUSER 1
 
