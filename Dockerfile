@@ -137,9 +137,8 @@ RUN modgit -b develop add vindi https://github.com/rtakauti/fiap_devops.git
 
 ENV COMPOSER_ALLOW_SUPERUSER 1
 
-WORKDIR /var/www/html/app/code/community/Vindi/Subscription/tests
+WORKDIR /var/www/html
 
-RUN composer install --no-dev --no-scripts
 
 EXPOSE 443
 
