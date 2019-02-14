@@ -1,0 +1,20 @@
+version: '3.5'
+services:
+    db:
+        image: rtakauti/fiap_devops_magento_db
+        container_name: db
+        ports:
+        - "3306"
+    web:
+        image: rtakauti/fiap_devops_magento_db
+        container_name: vindi.local
+        depends_on:
+        - db
+        ports:
+        - "443:443"
+        links:
+        - db:mysql
+networks:
+    default:
+        external:
+            name: webproxy
