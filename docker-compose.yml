@@ -6,7 +6,7 @@ services:
         ports:
         - "3306"
     web:
-        image: rtakauti/fiap_devops_magento_db
+        image: rtakauti/fiap_devops_magento_app
         container_name: vindi.local
         depends_on:
         - db
